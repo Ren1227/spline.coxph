@@ -1,0 +1,13 @@
+Package: spline.coxph
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.0.1
+Author: Ren Teranishi
+Maintainer: Ren Teranishi <ren.teranishi1227@gmail.com>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
