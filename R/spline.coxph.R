@@ -54,7 +54,7 @@ spline.coxph <- function (t.event, event, Z, xi1 = min(t.event), xi3 = max(t.eve
   H        = -res$hessian
   V        = solve(-H, tol = 10^(-100))
   beta.se  = sqrt(diag(V)[2:(1 + p)])
-  lam.se   = sqrt(diag(lam.est) %*% V[1,1] %*% diag(lam.est))
+  lam.se   = sqrt(lam.est %*% V[1,1] %*% lam.est)
   b.lower  = beta.est - 1.96 * beta.se
   b.upper  = beta.est + 1.96 * beta.se
   l.lower  = lam.est  - 1.96 * lam.se
