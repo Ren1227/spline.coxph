@@ -61,7 +61,7 @@ spline.coxph <- function (t.event, event, Z, xi1 = min(t.event), xi3 = max(t.eve
   l.upper  = lam.est  + 1.96 * lam.se
 
   beta.res = c(estimate = beta.est, SE = beta.se, Lower = b.lower, Upper = b.upper)
-  lam.res  = c(estimate = lam.se  , SE = lam.se,  Lower = l.lower, Upper = l.upper)
+  lam.res  = c(estimate = lam.est , SE = lam.se,  Lower = l.lower, Upper = l.upper)
   list(beta = beta.res, lambda = lam.res)
 }
 
